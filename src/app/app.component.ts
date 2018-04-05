@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { IVM } from "./models/ivm";
 import { VmService } from "./services/vm.service";
+import { Observable } from "rxjs/Observable";
 
 @Component({
   selector: "app-root",
@@ -8,10 +9,8 @@ import { VmService } from "./services/vm.service";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  vmData: IVM;
+  vmData$: Observable<IVM>;
   constructor(private vmService: VmService) {
-    this.vmService
-      .getVM()
-      .subscribe((response: IVM) => (this.vmData = response));
+    this.vmData$ = this.vmService.getVM();
   }
 }
