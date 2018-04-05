@@ -1,0 +1,23 @@
+<div class="warning-container">
+    <div class="row">
+        <h2 class="title danger">
+            <i class="fa fa-info-circle"></i> {{vm.currentStatus}}
+            <span class="action-more" title="More">
+                <i class="fa fa-ellipsis-h"></i>
+            </span>
+        </h2>
+        <h3 class="heading success">{{vm.name}}</h3>
+        <p class="desc">{{vm.description}}
+            <br> {{vm.path}}</p>
+    </div>
+    <div class="row last">
+        <div class="count border">
+            <p class="success">VMs</p>
+            <p>{{vm.virtualMachines}}</p>
+        </div>
+        <div class="count second-col danger">
+            <p>ERRORS</p>
+            <p>{{vm.errors}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@charset "UTF-8";
+/* CSS Document */
+body {
+  background: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #999999;
+}
+ul,
+li,
+outer,
+a,
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none !important;
+  text-decoration: none;
+}
+input,
+button,
+select,
+textarea {
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  color: #8b58a1;
+  text-decoration: none;
+}
+a:focus {
+  color: #8b58a1;
+  text-decoration: none;
+}
