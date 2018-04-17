@@ -1,4 +1,4 @@
-# Msys
+# Sample Angular 5 app with unit test
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
@@ -17,6 +17,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running code coverage report
+
+Run `ng test --watch=false --code-coverage` to get the code coverage report.
 
 ## Running end-to-end tests
 
